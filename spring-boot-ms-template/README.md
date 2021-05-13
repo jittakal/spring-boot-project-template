@@ -27,3 +27,10 @@ Standard package naming conventions for reference as follows ...
     - MyApplicationConfiguration - Spring boot configuration class
 
 'project-application' maven module will have dependency on the 'project-api' and 'project-client' maven modules.
+
+|Note:|
+---
+|Template project is based on maven. It includes
+- Multiple Maven modules structure 
+- Naming conventions for java packages 
+- Conentions to add maven dependency in POM, API, Application and Client project or module is important|
