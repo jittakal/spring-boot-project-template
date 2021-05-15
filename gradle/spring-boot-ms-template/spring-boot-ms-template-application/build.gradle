@@ -29,3 +29,7 @@ dependencyManagement {
 bootJar {
     enabled = true
 }
+
+bootBuildImage{ 
+  imageName='$DOCKER_USER_NAME$/'+rootProject.name+'-'+project.name
+}
