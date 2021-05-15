@@ -1,0 +1,5 @@
+rootProject.name = 'spring-boot-ms-template'
+
+include 'spring-boot-ms-template-api'
+include 'spring-boot-ms-template-application'
+include 'spring-boot-ms-template-client'

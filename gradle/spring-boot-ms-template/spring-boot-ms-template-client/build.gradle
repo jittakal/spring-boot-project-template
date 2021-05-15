@@ -1,0 +1,11 @@
+plugins {
+    id 'java-library'
+}
+
+description("Spring Boot Micro-services Template - Client")
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+}

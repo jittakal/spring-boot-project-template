@@ -1,0 +1,46 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.5'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+description("Spring Boot Micro-services Template")
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+}
+
+ext {
+    set('springBootVersion','2.4.5')
+    set('springCloudVersion', '2020.0.0')
+    set('snakeYamlVersion', '1.27')
+    set('jacksonDatabindVersion','2.11.4')
+}
+
+allprojects {
+    group = 'io.jittakal'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = '1.8'
+}
+
+subprojects {
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+bootJar {
+    enabled = false
+}
+
+bootBuildImage{
+    enabled = false
+}

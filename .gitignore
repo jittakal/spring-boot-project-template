@@ -23,6 +23,8 @@
 .classpath
 .settings
 .metadata
+.idea
+**/build/*
 
 **/target/*
 

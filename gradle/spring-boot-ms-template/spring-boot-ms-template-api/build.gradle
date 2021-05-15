@@ -1,0 +1,10 @@
+plugins {
+    id 'java-library'
+    id 'org.springframework.boot' apply false
+}
+
+description("Spring Boot Micro-services Template - API")
+
+dependencies {
+	implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonDatabindVersion}"
+}
